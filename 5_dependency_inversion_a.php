@@ -7,19 +7,19 @@
 // Management Layer
 class MembershipManager
 {
-	private $members;
+    private $members;
 
-	public function __constructor__(MemberList $members) {
-		$this->members = $members;
-	}
+    public function __constructor__(MemberList $members) {
+        $this->members = $members;
+    }
 
-	public function addMember($member) {
-		$this->members->append($member);
-	}
+    public function addMember($member) {
+        $this->members->append($member);
+    }
 }
 
 // Storage Layer
 class MemberList
 {
-	public function append($member) { echo "add $member"; }
+    public function append($member) { echo "add $member"; }
 }

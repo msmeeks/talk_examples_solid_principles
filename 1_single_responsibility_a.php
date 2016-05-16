@@ -6,11 +6,11 @@
 
 class PackageDeploymentManager
 {
-	public function makePackage() {...}
+    public function makePackage() {...}
 
-	public function getFriendlyOrgs() {...}
+    public function getFriendlyOrgs() {...}
 
-	public function getGaOrg() {...}
+    public function getGaOrg() {...}
 
-	public function pushPackage() {...}
+    public function pushPackage() {...}
 }

@@ -6,18 +6,18 @@
 
 class PackageManager
 {
-	public function makePackage() {...}
+    public function makePackage() {...}
 }
 
 class OrgListManager
 {
-	public function getFriendlyOrgs() {...}
+    public function getFriendlyOrgs() {...}
 
-	public function getGaOrg() {...}
+    public function getGaOrg() {...}
 }
 
 class DeploymentManager
 {
-	public function pushPackage() {...}
+    public function pushPackage() {...}
 }
 
