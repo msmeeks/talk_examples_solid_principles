@@ -7,9 +7,10 @@
 // Management Layer
 class MembershipManager
 {
+	/** @var MemberList $members */
     private $members;
 
-    public function __constructor__(MemberList $members) {
+    public function __constructor__($members) {
         $this->members = $members;
     }
 

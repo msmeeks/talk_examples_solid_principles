@@ -8,9 +8,7 @@ class PackageDeploymentManager
 {
     public function makePackage() {...}
 
-    public function getFriendlyOrgs() {...}
-
-    public function getGaOrg() {...}
+    public function getOrgs() {...}
 
     public function pushPackage() {...}
 }

@@ -22,17 +22,22 @@ class Robot implements Worker{
 
 class Manager {
     /**
-     * @var Worker[] $workers
+     * @param Worker[] $workers
      */
-    private $workers;
-
-    public function setWorkers($workers) {
-        $this->workers = $workers;
-    }
-
-    public function manage() {
-        foreach ($this->workers as $worker) {
+    public function manage($workers) {
+        foreach ($workers as $worker) {
             $worker.work();
+        }
+    }
+}
+
+class Caterer {
+    /**
+     * @param Worker[] $workers
+     */
+    public function feed($workers) {
+        foreach ($workers as $worker) {
+            $worker.eat();
         }
     }
 }

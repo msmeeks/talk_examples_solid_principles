@@ -11,9 +11,7 @@ class PackageManager
 
 class OrgListManager
 {
-    public function getFriendlyOrgs() {...}
-
-    public function getGaOrg() {...}
+    public function getOrgs() {...}
 }
 
 class DeploymentManager

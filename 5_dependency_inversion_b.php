@@ -12,9 +12,10 @@ interface MemberContainer
 
 class MembershipManager
 {
+	/** @var MemberList $members */
     private $members;
 
-    public function __construct(MemberContainer $members) {
+    public function __construct($members) {
         $this->members = $members;
     }
 
