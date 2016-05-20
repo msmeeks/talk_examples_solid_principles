@@ -2,25 +2,28 @@
 
 /**
  * Interface Segregation Principle Violation
- * Adapted from http://www.oodesign.com/interface-segregation-principle.html
  */
 
-interface Worker {
+interface Worker
+{
     public function work();
     public function eat();
 }
 
-class Employee implements Worker{
+class Employee implements Worker
+{
     public function work() {...}
     public function eat() {...}
 }
 
 class Robot implements Worker{
+
     public function work() {...}
     public function eat() { return; }
 }
 
-class Manager {
+class Manager
+{
     /**
      * @param Worker[] $workers
      */
@@ -31,7 +34,8 @@ class Manager {
     }
 }
 
-class Caterer {
+class Caterer
+{
     /**
      * @param Worker[] $workers
      */

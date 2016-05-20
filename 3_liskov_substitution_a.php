@@ -47,4 +47,3 @@ class AreaChecker
         assertEqual($area, 20);
     }
 }
-    

@@ -7,6 +7,8 @@
 class PackageManager
 {
     public function makePackage() {...}
+
+    public function getPackage() {...}
 }
 
 class OrgListManager

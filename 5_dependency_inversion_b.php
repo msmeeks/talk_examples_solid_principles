@@ -5,14 +5,11 @@
  */
 
 // Management Layer
-interface MemberContainer
-{
-    public function add($member);
-}
-
 class MembershipManager
 {
-	/** @var MemberList $members */
+    /**
+     * @var MemberContainer $members
+     */
     private $members;
 
     public function __construct($members) {
@@ -22,6 +19,11 @@ class MembershipManager
     public function addMember($member) {
         $this->members->add($member);
     }
+}
+
+interface MemberContainer
+{
+    public function add($member);
 }
 
 // Storage Layer

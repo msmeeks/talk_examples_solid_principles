@@ -2,7 +2,6 @@
 
 /**
  * Interface Segregation Principle Solution
- * Adapted from http://www.oodesign.com/interface-segregation-principle.html
  */
 
 interface Worker
@@ -10,20 +9,24 @@ interface Worker
     public function work();
 }
 
-interface Eater {
+interface Eater
+{
     public function eat();
 }
 
-class Employee implements Worker, Eater {
+class Employee implements Worker, Eater
+{
     public function work() {...}
     public function eat() {...}
 }
 
-class Robot implements Worker {
+class Robot implements Worker
+{
     public function work() {...}
 }
 
-class Manager {
+class Manager
+{
     /**
      * @param Worker[] $workers
      */
@@ -34,7 +37,8 @@ class Manager {
     }
 }
 
-class Caterer {
+class Caterer
+{
     /**
      * @param Eater[] $eaters
      */
